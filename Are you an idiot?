@@ -27,6 +27,8 @@ def no():
     yesbutton = Button(app1,text = "Yes",width=8, command=app.quit)
     yesbutton.place(x=20, y=80)
 
+    app1.attributes('-toolwindow', True)
+
     app1.protocol("WM_DELETE_WINDOW", on_closing)
     
 
@@ -49,6 +51,8 @@ screen_height = app.winfo_screenheight()
 
 x1 = random.randint(0, screen_width - 400)
 y1 = random.randint(0, screen_height - 300)
+
+app.attributes('-toolwindow', True)
 
 app.geometry("+{}+{}".format(x1, y1))
 
