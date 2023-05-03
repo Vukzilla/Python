@@ -1,7 +1,7 @@
 import random
 
 case = 0
-rand = 0
+rand = random.randint(1, 400)
 
 while rand != 400 :
     rand = random.randint(1, 400)
